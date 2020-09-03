@@ -1,1 +1,32 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(177, 0, 177);
+}
+h1{
+    color: white;
+    font-family: monospace;
+    font-size: 60px;
+    text-align: center;
+}
+#time{
+    position: absolute;
+    visibility: visible;
+    font-family: Impact;
+    font-size: 50px;
+    color: white;
+    left: 40%;
+    top: 45%;
+}
+#congrat{
+    position: absolute;
+    font-family: sans-serif;
+    color: white;
+    font-size: 50px;
+    visibility: hidden;
+    text-align: center;
+    left: 36%;
+    top: 45%;
+}
