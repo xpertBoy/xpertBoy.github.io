@@ -1,8 +1,288 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Home</title>
-</heaf>
-<body>
-<h2>hello world</h2>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharda Public School / Home</title>
+</head>
+<body id="body">
+        <button id="ABOUT" onclick="dropDown()">About</button>
+        <a href="https://shardapublicschool.com" target="_blank"><button id="OFFICIAL">Official Site</button></a>
+        <button class="btn-col1" onclick="colorL()">Light Mode</button>
+        <span class="slash">/</span>
+        <button class="btn-col2" onclick="colorD()">Dark Mode</button>
+    </nav>
+    <br>
+    <br>
+    <div class="content" id="content">
+    <p>Sharda Public School Almora (affiliated to CBSE, New Delhi) was found in the year 2001 
+    with the aim of providing quality education to the residents of Almora and its nearby areas.</p>
+    <br>
+    <p>Sharda Public School provides a friendly and secular environment with the aim of building
+    confident, respectful and responsible individuals.The school nurtures and develops each individual’s
+    capabilities so as to integrate a harmonious development of the child’s intellectual, emotional and
+    physical capacities.Self confidence and the right set of values form the cornerstone of a successful
+    and happy life, and we at Sharda Public School guide our students to grow up with a sense of social
+    awareness, civic responsibility and personal growth.</p>
+    <br>
+    <img src="pic.jpg" class="pic">
+    <img src="pic2.jpg" class="pic2">
+    <br>
+    <p>In Sharda Public School, learning is supported across the curriculum through activities in which
+    children express their ideas through art ( art activities and craft workshops).Our curriculum includes
+    activities that help children develop their cognitive, socio-emotional and motor activities.Such
+    integration of making and enjoying art encourage each students’ full and all-sided development.</p>
+    <br>
+    <p class="key"><span>Key Features :-</span><br><br>
+    PLAY<br><br>STORY<br><br>KARATE CLASSES<br><br>ARTS AND CRAFTS<br><br>GARDENING<br><br>DANCE CLASSES<br><br>
+    MUSIC<br><br>THEATRE<br><br>RHYME TIME<br><br>FILM FEST<br><br>SINGING<br><br>EXCERCISE<br><br>NATURE PLAY<br><br>
+    YOGA & MEDITATION<br><br>INDOOR & OUTDOOR GAMES</p>
+    </div>
+    <div id="about">
+        <p>
+            This Webpage is <br><br>created by me,<br><br> Harsh Sharma of<br><br> class 10th 'A'
+            <br><br>of <br><br>Sharda Public School,<br><br> Almora<br><br> as the project work of
+            <br><br>Computer Science.<br><br>
+            <button onclick="dropUp()">Back</button>
+        </p>
+    </div>
 </body>
+<script>
+    function dropDown()
+    {
+        document.getElementById("about").style.top = "20%";
+    }
+    function dropUp()
+    {
+        document.getElementById("about").style.top = "-150%";
+    }
+    function colorD()
+    {
+        document.getElementById("body").style.background = "black";
+        document.getElementById("content").style.color = "yellow";
+    }
+    function colorL()
+    {
+        document.getElementById("body").style.background = "white";
+        document.getElementById("content").style.color = "red";
+    }
+</script>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        user-select: none;
+    }
+    body{
+        background: white;
+        background-size: 100% 100%;
+    }
+    .nav{
+        background: mediumblue;
+    }
+    .nav #ABOUT{
+        position: relative;
+        padding: 20px;
+        color: white;
+        background: none;
+        border: none;
+        font-size: 25px;
+        cursor: pointer;
+        transition: .5s;
+    }
+    .nav #OFFICIAL{
+        position: relative;
+        padding: 20px;
+        color: white;
+        background: none;
+        border: none;
+        font-size: 25px;
+        cursor: pointer;
+        transition: .5s;
+    }
+    .pic{
+        position: relative;
+        height: 40%;
+        width: 40%;
+        left: 10%;
+    }
+    .pic2{
+        position: relative;
+        height: 40%;
+        width: 40%;
+        left: 10%;
+    }
+    .nav .btn-col1{
+        position: absolute;
+        top: 4%;
+        left: 22%;
+        background: none;
+        border: none;
+        color: gray;
+        font-size: 20px;
+        margin-left: 5px;
+        cursor: pointer;
+        transition: color 1s;
+    }
+    .nav .btn-col2{
+        position: absolute;
+        top: 4%;
+        left: 32%;
+        background: none;
+        border: none;
+        color: gray;
+        font-size: 20px;
+        margin-left: 5px;
+        cursor: pointer;
+        transition: color 1s;
+    }
+    .nav .slash{
+        position: absolute;
+        top: 4%;
+        left: 30.7%;
+        color: gray;
+        font-size: 20px;
+    }
+    .content{
+        padding: 10px;
+        color: red;
+        text-align: justify;
+        letter-spacing: 2px;
+        font-size: 18px;
+    }
+    .content p{
+        margin: 10px;
+    }
+    .content .key{
+        text-align: center;
+    }
+    .content span{
+        font-size: 30px;
+        color: rgb(110, 104, 104);
+        font-weight: bolder;
+    }
+    #about{
+        position: absolute;
+        top: -150%;
+        left: 37%;
+        display: block;
+        width: 300px;
+        height: 450px;
+        background: rgb(122, 119, 119);
+        border-radius: 20px;
+        padding: 20px;
+        letter-spacing: 3px;
+        word-spacing: 5px;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        transition: 1s;
+    }
+    #about button{
+        border: none;
+        padding: 4px;
+        background: tomato;
+        color: white;
+        font-size: 20px;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+    .nav #ABOUT:hover, #OFFICIAL:hover{
+        color: tomato;
+    }
+    .nav .btn-col1:hover{
+        color: white;
+    }
+    .nav .btn-col2:hover{
+        color: black;
+    }
+    @media screen and (max-width: 830px){
+        #about{
+            left: 25%;
+        }
+        .nav .btn-col1{
+            top: 2.5%;
+            left: 35%;
+        }
+        .nav .btn-col2{
+            top: 2.5%;
+            left: 50%;
+        }
+        .nav .slash{
+            top: 2.5%;
+            left: 49%;
+        }
+    } 
+    @media screen and (max-width: 768px){
+        #about{
+            left: 25%;
+        }
+        .nav .btn-col1{
+            top: 2.5%;
+            left: 35%;
+        }
+        .nav .btn-col2{
+            top: 2.5%;
+            left: 50%;
+        }
+        .nav .slash{
+            top: 2.5%;
+            left: 49%;
+        }
+    }
+    @media screen and (max-width: 414px){
+        #about{
+            left: 9%;
+        }
+        .nav .btn-col1{
+            font-size: 10px;
+            top: 4%;
+            left: 65%;
+        }
+        .nav .btn-col2{
+            font-size: 10px;
+            top: 4%;
+            left: 83%;
+        }
+        .nav .slash{
+            font-size: 20px;
+            top: 3.3%;
+            left: 81%;
+        }
+    }
+    @media screen and (max-width: 375px){
+        #about{
+            left: 4.5%;
+        }
+        .nav .btn-col1{
+            font-size: 8px;
+            left: 71%;
+        }
+        .nav .btn-col2{
+            font-size: 8px;
+            left: 86%;
+        }
+        .nav .slash{
+            font-size: 20px;
+            top: 3.3%;
+            left: 84%;
+        }
+    }
+    @media screen and (max-width: 360px){
+        #about{
+            left: 3%;
+        }
+        .nav .btn-col1{
+            top: 4.5%;
+        }
+        .nav .btn-col2{
+            top: 4.5%;
+        }
+        .nav .slash{
+            top: 3.6%;
+        }
+    }
+</style>
 </html>
