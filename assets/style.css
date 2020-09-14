@@ -28,6 +28,20 @@ body{
     font-size: 50px;
     color: white;
 }
+#title-about1{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+#nav #home{
+    color: tomato;
+}
+#nav #about{
+    color: tomato;
+}
 #nav a:hover{
     color: tomato;
 }
@@ -35,10 +49,16 @@ body{
     #title-about{
         left: 36%;
     }
+    #title-about1{
+        left: 33%;
+    }
 }
 @media screen and (max-width: 647px) {
     #title-about{
         left: 25%;
+    }
+    #title-about1{
+        left: 27%;
     }
     #nav a{
         margin: 20px;
@@ -47,6 +67,9 @@ body{
 @media screen and (max-width: 414px) {
     #title-about{
         left: 25%;
+    }
+    #title-about1{
+        left: 21%;
     }
     #nav a{
         font-size: 12px;
@@ -57,10 +80,16 @@ body{
     #title-about{
         left: 23%;
     }
+    #title-about1{
+        left: 17%;
+    }
 }
 @media screen and (max-width: 360px) {
     #title-about{
         left: 21%;
+    }
+    #title-about1{
+        left: 16%;
     }
     #nav a{
         font-size: 12px;
