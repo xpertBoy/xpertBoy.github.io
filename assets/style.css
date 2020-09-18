@@ -50,36 +50,55 @@ body{
 }
 #sign-up-box{
     position: absolute;
-    background: #090c0e;
-    height: 400px;
-    width: 300px;
+    background: #25252b;
+    height: 480px;
+    width: 360px;
+    left: 37%;
+    top: 20%;
+    border-radius: 5px;
+}
+#sign-up-box #sgn-title{
+    position: absolute;
+    text-align: left;
     left: 40%;
-    top: 30%;
-    border-radius: 25px;
+    top: 2%;
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
 }
 #sign-up-box input{
-    text-align: center;
-    margin: 25px;
-    width: 230px;
-    margin-top: 25px;
+    text-align: left;
+    background: #515157;
+    font-size: 16px;
+    margin: 10px;
+    width: 134px;
+    margin-top: 65px;
     padding: 10px;
     border: none;
-    border-radius: 25px;
+    border-radius: 5px;
 }
-#sign-up-box #sgn-btn{
+#sign-up-box #e-mail{
+    width: 315px;
+    margin-top: 45px;
+}
+#sign-up-box #pa-ss{
+    width: 315px;
+    margin-top: 45px;
+}
+#sign-up-box #sgup-btn{
     color: white;
     background: tomato;
     text-align: center;
     margin: 25px;
-    width: 130px;
-    margin-left: 78px;
-    margin-top: 5px;
+    width: 335px;
+    margin-left: 10px;
+    margin-top: 45px;
     padding: 10px;
     border: none;
-    border-radius: 25px;
+    border-radius: 5px;
     transition: .8s;
 }
-#sign-up-box #sgn-btn:hover{
+#sign-up-box #sgup-btn:hover{
     background: rgb(65, 65, 255);
 }
 @media screen and (max-width: 768px) {
@@ -90,7 +109,7 @@ body{
         left: 33%;
     }
     #sign-up-box{
-        left: 31%;
+        left: 26%;
     }
 }
 @media screen and (max-width: 647px) {
@@ -104,7 +123,7 @@ body{
         margin: 20px;
     }
     #sign-up-box{
-        left: 27%;
+        left: 22%;
     }
 }
 @media screen and (max-width: 414px) {
@@ -119,7 +138,7 @@ body{
         margin: 10px;
     }
     #sign-up-box{
-        left: 14%;
+        left: 6.5%;
     }
 }
 @media screen and (max-width: 375px) {
@@ -130,7 +149,7 @@ body{
         left: 17%;
     }
     #sign-up-box{
-        left: 9.5%;
+        left: 1.9%;
     }
 }
 @media screen and (max-width: 360px) {
@@ -145,6 +164,7 @@ body{
         margin: 8px;
     }
     #sign-up-box{
-        left: 8%;
+        width: 358px;
+        left: 0%;
     }
 }
