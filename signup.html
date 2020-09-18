@@ -16,12 +16,13 @@
         <a href="signup" id="sign-up">Sign Up</a>
     </nav>
     <div id="sign-up-box">
-        <form>
-            <input type="text" id="f-name" placeholder="Enter first name" required/><br/>
-            <input type="text" id="l-name" placeholder="Enter last name" required/><br/>
-            <input type="email" id="e-mail" placeholder="Enter your email" required/><br/>
-            <input type="password" id="pa-ss" placeholder="Set a password" required/>
-            <input type="submit" id="sgn-btn" value="Sign Up">
+        <form autocomplete="off">
+            <label id="sgn-title">Sign Up</label><br>
+            <input type="text" id="f-name" placeholder="* First name" required/>
+            <input type="text" id="l-name" placeholder="* Last name" required/>
+            <input type="email" id="e-mail" placeholder="* Email Address" required/>
+            <input type="password" id="pa-ss" placeholder="* Password" required/>
+            <input type="submit" id="sgup-btn" value="Sign Up">
         </form>
     </div>
 </body>
