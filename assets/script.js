@@ -11,3 +11,16 @@ function setDefaults()
     e_mail.value = "";
     pa_ss.value = "";
 }
+
+const cookieBanner = document.getElementById("cookie-consent");
+
+if(!localStorage.getItem('cookieAccepted'))
+{
+    cookieBanner.style.bottom = "0";
+}
+
+function cookieAccepted()
+{
+    cookieBanner.style.bottom = "-100%";
+    localStorage.setItem('cookieAccepted', 'true');
+}
