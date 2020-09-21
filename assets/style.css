@@ -98,6 +98,32 @@ body{
     border-radius: 5px;
     transition: .8s;
 }
+#cookie-consent{
+    position: fixed;
+    bottom: -100%;
+    width: 100%;
+    font-family: 'Courier Prime', monospace;
+    background: #66FA11;
+    padding: 20px 5px;
+    transition: 2s;
+}
+#cookie-consent p{
+    padding: 5px;
+}
+#cookie-consent button{
+    font-family: 'Courier Prime', monospace;
+    background: tomato;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+#cookie-consent button:hover{
+    background: #1BA7E3;
+}
 #sign-up-box #sgup-btn:hover{
     background: rgb(65, 65, 255);
 }
