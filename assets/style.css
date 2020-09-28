@@ -121,6 +121,9 @@ body{
     cursor: pointer;
     transition: .4s;
 }
+input:focus{
+    outline: none;
+}
 #cookie-consent button:hover{
     background: #1BA7E3;
 }
