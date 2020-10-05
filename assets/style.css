@@ -98,13 +98,6 @@ body{
     border-radius: 5px;
     transition: .8s;
 }
-.page-not-h1{
-    margin-top: 200px;
-    font-size: 90px;
-}
-.page-not-span{
-    font-family: 'roboto', sans-serif;
-}
 #cookie-consent{
     position: fixed;
     bottom: -100%;
