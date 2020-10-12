@@ -45,3 +45,8 @@ function load()
 {
     text.innerHTML = localStorage.getItem('data');
 }
+
+function loader()
+{
+    document.getElementById('loader').click();
+}
