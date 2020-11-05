@@ -12,6 +12,11 @@ function setDefaults()
     pa_ss.value = "";
 }
 
+function fadeTheLoader()
+{
+    $('#res-splash').fadeOut();
+}
+
 const cookieBanner = document.getElementById("cookie-consent");
 
 if(!localStorage.getItem('cookieAccepted'))
