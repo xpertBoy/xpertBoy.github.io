@@ -11,7 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet"> 
     <title>xpert : Home</title>
 </head>
-<body>
+<body onload="fadeTheLoader()">
+    <div id="res-splash">
+        <div class="spinner"></div>
+    </div>
     <nav id="nav">
         <span id="logo">xpert!</span>
         <a href="index" id="home">Home</a>
@@ -24,6 +27,6 @@
         <button onclick="cookieAccepted()">Ok</button>
     </div>
 </body>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/script.js"></script>
 </html>
