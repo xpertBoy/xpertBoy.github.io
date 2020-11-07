@@ -1,32 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="QdzdER6K4o54yAxsmGNlS4ZJE4j37g5zNQSAly5Ji7E" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="icon" href="assets/icon/icon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet"> 
-    <title>xpert : Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Official website of The xpert Developer Team"/>
+    <meta name="author" content="xpert Developer Team"/>
+    <link rel="icon" href="assets/favicon.ico"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"/> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"/>  
+    <link rel="stylesheet" href="assets/style.css"/>
+    <title>Xpert : Home</title>
 </head>
 <body onload="fadeTheLoader()">
     <div id="res-splash">
         <div class="spinner"></div>
     </div>
-    <nav id="nav">
-        <span id="logo">xpert!</span>
-        <a href="index" id="home">Home</a>
-        <a href="about">About</a>
-        <a href="signup">Sign Up</a>
-    </nav>
-    <span id="title-about">GameDev.</span>
-    <div id="cookie-consent">
-        <p>This website uses cookies to enhance your experience and provide relevant ads.</p>
-        <button onclick="cookieAccepted()">Ok</button>
+    <div id="res-main">
+        <div class="res-nav">
+            <span class="res-nav-logo-xpert"><a href="index.html">xpert</a></span>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="download.html">Download</a></li>
+                <li><a href="help-and-support.html">Help</a></li>
+            </ul>
+            <button class="res-nav-toggle-btn" id="res-nav-toggle-btn" onclick="handleToggleResCont()">
+                <span class="uc-1"></span>
+                <span class="uc-2"></span>
+                <span class="uc-3"></span>
+            </button>
+        </div>
+        <div id="res-nav-res-mob">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="download.html">Download</a></li>
+                <li><a href="help-and-support.html">Help</a></li>
+            </ul>
+        </div>
+        <div class="res-we-re-prom">
+            <img src="assets/to-do-illus.svg"/>
+            <div>We are rebuilding, stay tuned !</div>
+        </div>
     </div>
 </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="assets/index.js"></script>
+<script src="assets/script.js"></script>
 </html>
